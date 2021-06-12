@@ -1,5 +1,9 @@
 .App {
   display: flex;
+  /* background-image: url(./assets/doctrina_background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; */
+  width: 100%;
 }
 
 .leftSide{

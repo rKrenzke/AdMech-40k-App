@@ -8,7 +8,8 @@ const ForgeWorlds = [
             name: "Wrath of Mars",
             cost: "1CP / 2CP",
             text: "Use this strategem in your Shooting phase, when a MARS unit is selected to shoot. Until the end of the phase, each time a model in that unit makes an attack, an unmodified wound roll of 6 inflicts 1 mortal wound in addition to any normal damage (to a maximum of 6 mortal wounds). If that unit has a Power Rating of 11 or more, this Strategem costs 2CP"
-        }
+        },
+        minified: ["Units gain Canticles of the Omnissiah", "Unit can re-roll one hit roll everytime it shoots or fights"]
     },
     {
         name: "Lucius",
@@ -20,6 +21,7 @@ const ForgeWorlds = [
             cost: "1CP",
             text: "Before the battle, select one LUCIUS unit from your army. That unit can be set up in a teleportarium instead of on the battlefield."
         },
+        minified: ["Add one to armor save throws when damaged by a 1 Damage weapon", "+3\" to ranged weapons"]
     },
     {
         name: "Agripinna",

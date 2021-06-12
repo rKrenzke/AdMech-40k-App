@@ -1,11 +1,34 @@
-.active {
-    border: 3px solid red;
+.cardTitle{
+    font-family: 'Teko', sans-serif;
 }
 
-.container{
-    
+.doctrina{
+    margin: 1rem;
 }
 
-/* .used {
-    border: 2px solid blue;
-} */
+.main{
+    background-image: url(../assets/doctrina_background.jpg);
+    background-size: cover;
+    width: 40%;
+}
+
+.main h2{
+    font-family: 'Teko', sans-serif;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.optimization{
+    background-color: rgb(80, 148, 13);
+    color: white;
+}
+
+.deprecation{
+    background-color: rgb(173, 10, 42);
+    color: white;
+}
+
+.deprecation, .optimization{
+    padding: .25rem;
+}

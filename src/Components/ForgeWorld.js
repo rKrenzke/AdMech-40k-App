@@ -13,7 +13,7 @@ const ForgeWorld = (props) => {
     console.log(props)
     return(
         <>
-        <h1>Select Your Forge World</h1>
+        <h1 className="forgeWorld">Select Your Forge World</h1>
         <div className="container">
             {props.array.map(selection => {
                 let icon;
@@ -42,10 +42,9 @@ const ForgeWorld = (props) => {
                     default:
                 }
                 return(
-                    <Card style={{width: '16rem'}} className="card" onClick={e => (props.select(selection))}>
+                    <Card style={{width: '16rem'}} className="fw" onClick={e => (props.select(selection))}>
                         <Card.Img src={icon}></Card.Img>
-                        <Card.Header>{selection.name}</Card.Header>
-                        <Card.Text>{selection.warlordTrait}</Card.Text>
+                        <Card.Text>{selection.name}</Card.Text>
                     </Card>
                 )
             })}

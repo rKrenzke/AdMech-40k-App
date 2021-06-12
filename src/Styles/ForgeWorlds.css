@@ -1,5 +1,20 @@
+.fw{
+    margin: .5rem;
+    /* padding: 1rem; */
+    border-radius: 10%;
+}
+
 .container{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.forgeWorld{
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
 }
 
 h1{
