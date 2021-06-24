@@ -23,7 +23,9 @@ function App() {
   }
 
   const turnHandler = () => {
-    setTurnNumber(turnNumber + 1);
+    setTurnNumber(prevState => {
+      return prevState + 1
+    });
   }
 
   return (
