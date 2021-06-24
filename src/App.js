@@ -2,7 +2,7 @@ import './App.css';
 import {useState} from 'react';
 import Doctrinas from './Components/Doctrinas';
 import Canticles from './Components/Canticles/Canticles';
-import Core from './Components/Core';
+import Core from './Components/Core_Units/Core';
 import forgeWorldArray from './CodexArrays/ForgeWorlds';
 import ForgeWorld from './Components/ForgeWorld';
 import NavBar from './Components/Nav';

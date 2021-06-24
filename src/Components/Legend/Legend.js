@@ -34,11 +34,8 @@ const Legend = (props) => {
         </div>
       </section>
       <section>
+        <button className={styles.turnButton} onClick={props.turnHandler}><span>{props.turn}</span></button>
         <h2 className={styles.header}>Turn</h2>
-        <p className={styles.number}>{props.turn}</p>
-        <button className={styles.button} onClick={props.turnHandler}>
-          Next
-        </button>
       </section>
     </div>
   );
