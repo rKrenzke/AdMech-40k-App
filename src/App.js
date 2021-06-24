@@ -1,16 +1,17 @@
 import './App.css';
 import {useState} from 'react';
 import Doctrinas from './Components/Doctrinas';
-import Canticles from './Components/Canticles';
+import Canticles from './Components/Canticles/Canticles';
 import Core from './Components/Core';
 import forgeWorldArray from './CodexArrays/ForgeWorlds';
 import ForgeWorld from './Components/ForgeWorld';
 import NavBar from './Components/Nav';
-import Legend from './Components/Legend';
+import Legend from './Components/Legend/Legend';
 
 function App() {
 
   const [forgeWorld, setForgeWorld] = useState(null);
+  const [turnNumber, setTurnNumber] = useState(1)
 
   const selectForgeWorld = (selection) => {
     setForgeWorld(selection);
@@ -18,6 +19,11 @@ function App() {
 
   const reset = () => {
     setForgeWorld(null);
+    setTurnNumber(1);
+  }
+
+  const turnHandler = () => {
+    setTurnNumber(turnNumber + 1);
   }
 
   return (
@@ -32,7 +38,7 @@ function App() {
         </section>
         <section className="rightSide">
           <Core />
-          <Legend />
+          <Legend turn={turnNumber} turnHandler={turnHandler}/>
         </section>
       </div> 
       :

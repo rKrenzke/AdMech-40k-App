@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './Canticles.module.css';
 
 const Canticles = () => {
     return(
