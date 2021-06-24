@@ -3,29 +3,42 @@ import styles from "./Legend.module.css";
 
 const Legend = (props) => {
   const [commandPoints, setCommandPoints] = useState(0);
+  console.log(commandPoints);
 
   const increasePointHandler = () => {
-    setCommandPoints(commandPoints + 1);
+    setCommandPoints(prevState => {
+        return prevState + 1});
   };
 
   const decreasePointHandler = () => {
-    setCommandPoints(commandPoints - 1);
+    setCommandPoints(prevState => {
+        if(prevState === 0){
+            return 0;
+        }else{
+            return prevState - 1};
+        })
   };
 
   return (
-    <div>
+    <div className={styles.box}>
       <section>
-        <h2>Command Points</h2>
-        <div>
-          <button onClick={increasePointHandler}>Increase</button>
-          <p>{commandPoints}</p>
-          <button onClick={decreasePointHandler}>Decrease</button>
+        <h2 className={styles.header}>Command Points</h2>
+        <p className={styles.number}>{commandPoints}</p>
+        <div className={styles.buttonBox}>
+          <button className={styles.button} onClick={decreasePointHandler}>
+            &#8722;
+          </button>
+          <button className={styles.button} onClick={increasePointHandler}>
+            &#43;
+          </button>
         </div>
       </section>
       <section>
-          <h2>Turn</h2>
-          <p>{props.turn}</p>
-          <button onClick={props.turnHandler}>Next Turn</button>
+        <h2 className={styles.header}>Turn</h2>
+        <p className={styles.number}>{props.turn}</p>
+        <button className={styles.button} onClick={props.turnHandler}>
+          Next
+        </button>
       </section>
     </div>
   );
