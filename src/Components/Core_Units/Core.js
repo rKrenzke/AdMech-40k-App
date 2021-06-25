@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Core.module.css";
 
-const skitariiCore = ["Rangers", "Vanguard", "Sicarian Infiltrators", "Sicarian Ruststalkers", "Serberys Raiders", "Serberys Sulpherhounds", "Pteraxii Sterylizors", "Pteraxii Skystalkers", "Ironstrider Ballistarii", "Sydonian Dragoons"];
+const skitariiCore = ["Rangers", "Vanguard", "Sicarian Infiltrators/Ruststalkers", "Serberys Raiders/Sulpherhounds", "Pteraxii Sterylizors/Skystalkers", "Ironstrider Ballistarii", "Sydonian Dragoons"];
 const cultMechanicusCore = ["Fulgurite Electro-Priests", "Corpuscarii Electro-Priests", "*Kastelan Robots (when within 3\" of Datasmith)"];
 
 const Core = () => {

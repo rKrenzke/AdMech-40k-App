@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { Card } from "react-bootstrap";
-import "../Styles/Doctrina.css";
-import imperativeArray from "../CodexArrays/Doctrina";
+import DoctrinaView from './DoctrinaView';
+import './Doctrina.css';
+import imperativeArray from '../../CodexArrays/Doctrina';
 
 const Doctrinas = () => {
   const [imperatives, setImperatives] = useState(imperativeArray);
@@ -11,18 +11,14 @@ const Doctrinas = () => {
 
   const displayImperatives = imperatives.map((doctrina) => {
     return (
-      <div>Create new individual doctrina component </div>
+      <DoctrinaView name={doctrina.name} opt={doctrina.optimization} dep={doctrina.deprecation}/>
     );
   });
 
-  const checkImpArray = () => {
-    console.log(imperatives);
-  };
   return (
     <div className="main">
       <h2>Doctrina Imperatives</h2>
       {displayImperatives}
-      <button onClick={checkImpArray}>Check array</button>
     </div>
   );
 };

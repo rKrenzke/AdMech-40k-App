@@ -6,17 +6,13 @@
     margin: 1rem;
 }
 
-.main{
-    /* background-image: url(../assets/doctrina_background.jpg); */
-    background-size: cover;
-    width: 40%;
-}
 
 .main h2{
     font-family: 'Teko', sans-serif;
     color: white;
     margin: 0 auto;
     text-align: center;
+    text-shadow: 4px 4px 3px black;
 }
 
 .optimization{

@@ -3,7 +3,6 @@ import styles from "./Legend.module.css";
 
 const Legend = (props) => {
   const [commandPoints, setCommandPoints] = useState(0);
-  console.log(commandPoints);
 
   const increasePointHandler = () => {
     setCommandPoints(prevState => {

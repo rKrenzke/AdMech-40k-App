@@ -1,6 +1,6 @@
 import './App.css';
 import {useState} from 'react';
-import Doctrinas from './Components/Doctrinas';
+import Doctrinas from './Components/Doctrinas/Doctrinas';
 import Canticles from './Components/Canticles/Canticles';
 import Core from './Components/Core_Units/Core';
 import forgeWorldArray from './CodexArrays/ForgeWorlds';
