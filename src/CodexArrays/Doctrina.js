@@ -15,7 +15,7 @@ const ImperativeArray = [
     },
     {
         name: "Bulwark Imperative", 
-        optimization: "+1 to Save characteristic (to max of 2+)", 
+        optimization: "+1 to Save characteristic (max of 2+)", 
         deprecation: "Reduce Move characteristic by 3\"",
         wasUsed: false,
         isActive: false
