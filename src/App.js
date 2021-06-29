@@ -31,7 +31,6 @@ function App() {
   return (
     <div>
       <NavBar reset={reset} />
-      <div>
       {forgeWorld ?
       <div className="App">
         <section className="leftSide">
@@ -45,7 +44,7 @@ function App() {
       </div> 
       :
       <ForgeWorld select={selectForgeWorld} array={forgeWorldArray} />
-    }</div>
+    }
     
     </div>
   );

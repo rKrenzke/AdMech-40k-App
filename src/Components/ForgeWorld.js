@@ -43,8 +43,8 @@ const ForgeWorld = (props) => {
                 }
                 return(
                     <Card style={{width: '16rem'}} className="fw" onClick={e => (props.select(selection))}>
-                        <Card.Img src={icon}></Card.Img>
-                        <Card.Text>{selection.name}</Card.Text>
+                        {/* <Card.Img className="fwLogo"src={icon}></Card.Img> */}
+                        <Card.Text className="name">{selection.name}</Card.Text>
                     </Card>
                 )
             })}
