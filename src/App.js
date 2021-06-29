@@ -30,7 +30,7 @@ function App() {
 
   return (
     <div>
-      <NavBar reset={reset} />
+      <NavBar reset={reset} forgeWorld={forgeWorld} />
       {forgeWorld ?
       <div className="App">
         <section className="leftSide">

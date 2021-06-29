@@ -6,7 +6,7 @@ const NavBar = (props) => {
     return(
         <div className="navbar">
             <h1>CAWL.culator</h1>
-            <Button onClick={e => props.reset()}>New Game</Button>
+            {props.forgeWorld ? <Button onClick={e => props.reset()}>New Game</Button> : null}
         </div>
     )
 }

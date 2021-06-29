@@ -6,6 +6,9 @@
     margin: 1rem;
 }
 
+.main{
+    width: 50%;
+}
 
 .main h2{
     font-family: 'Teko', sans-serif;
