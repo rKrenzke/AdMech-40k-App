@@ -4,14 +4,21 @@ import './Doctrina.css';
 import imperativeArray from '../../CodexArrays/Doctrina';
 
 const Doctrinas = () => {
-  const [imperatives, setImperatives] = useState(imperativeArray);
-  const [active, setActive] = useState("doctrina");
+  const [imperativeArr, setImperativeArr] = useState(imperativeArray);
 
-  //TODO: decide how I'm going to track state changes to doctrinas (wasUsed?, isActive?)
+  const activeImperativeHandler = (docName) => {
+    let copyArr = [...imperativeArr];
+    copyArr.forEach(doctrina => {
+      if(doctrina.name === docName){
+        doctrina.isActive = true;
+      }
+    })
+    setImperativeArr(copyArr);
+  }
 
-  const displayImperatives = imperatives.map((doctrina) => {
+  const displayImperatives = imperativeArr.map((doctrina) => {
     return (
-      <DoctrinaView name={doctrina.name} opt={doctrina.optimization} dep={doctrina.deprecation}/>
+      <DoctrinaView doctrina={doctrina} opt={doctrina.optimization} dep={doctrina.deprecation} setActive={activeImperativeHandler}/>
     );
   });
 
