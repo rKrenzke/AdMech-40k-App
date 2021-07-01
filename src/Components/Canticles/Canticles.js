@@ -16,9 +16,9 @@ const Canticles = () => {
     setCanticleArr(copyArr);
   };
 
-  const canticleMapper = CanticlesArray.map((canticle) => {
+  const canticleMapper = canticleArr.map((canticle) => {
     return (
-      <div className={styles.canticle} onClick={(e) => {activeCanticleHandler(canticle.name)}}>
+      <div className={canticle.isActive ? styles.active : styles.canticle} onClick={(e) => {activeCanticleHandler(canticle.name)}}>
         <h3 className={styles.header}>{canticle.name}</h3>
         <p className={styles.body}>{canticle.rule}</p>
       </div>
