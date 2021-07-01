@@ -14,7 +14,7 @@ const Doctrinas = () => {
       }
     })
     setImperativeArr(copyArr);
-  }
+  };
 
   const displayImperatives = imperativeArr.map((doctrina) => {
     return (
